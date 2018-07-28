@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: git-app_production
-  username: git-app
-  password: <%= ENV['GIT-APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
